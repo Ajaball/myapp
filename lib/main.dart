@@ -9,6 +9,7 @@ import 'features/housing/presentation/housing_screen.dart';
 import 'features/roadmap/presentation/roadmap_screen.dart';
 import 'features/rest/presentation/rest_screen.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'features/admission/presentation/admission_screen.dart';
 
 void main() {
   runApp(
@@ -149,17 +150,6 @@ class _HomePageState extends State<HomePage> {
         onTap: _onItemTapped,
         showUnselectedLabels: true,
       ),
-    );
-  }
-}
-
-class AdmissionPage extends StatelessWidget {
-  const AdmissionPage({super.key});
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('التسجيل والقبول')),
-      body: const Center(child: Text('محتوى صفحة التسجيل والقبول')),
     );
   }
 }
